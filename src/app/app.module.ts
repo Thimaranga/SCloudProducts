@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatCardModule} from '@angular/material/card';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MatCardModule } from '@angular/material/card';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { ProductComponent } from './components/product/product.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    ProductComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +28,11 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    NgxSpinnerModule,
+    HttpClientModule,
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
